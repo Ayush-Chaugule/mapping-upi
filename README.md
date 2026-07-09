@@ -69,7 +69,7 @@ UPI_Mapping/
 │   ├── main.py                        # NPCI data scraper
 │   └── load_to_mysql.py               # CSV to MySQL loader
 ├── report/
-│   └── README.txt                     # Place report PDF here
+│   └── upi_report                    
 ├── requirements.txt
 ├── .gitignore
 └── README.md
