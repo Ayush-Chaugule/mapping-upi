@@ -1,0 +1,37 @@
+# Data files — not included in repository
+scraper/output/
+scraper/raw/
+scraper/failed_downloads.txt
+scraper/parse_errors.txt
+data/
+*.csv
+*.xlsx
+*.xls
+
+# Database
+*.sql
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+env/
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Report PDF (add manually)
+report/*.pdf
