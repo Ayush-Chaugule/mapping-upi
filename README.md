@@ -86,8 +86,9 @@ UPI_Mapping/
 | RBI Payment System Indicators | NEFT and RTGS monthly volume and value | 2019–2026 |
 
 Data is not included in this repository.
-See scraper/main.py to collect it directly
-from NPCI and RBI public sources.
+NPCI data is collected via scraper/main.py.
+RBI data has no equivalent public API and must
+be collected manually — see step 3 below.
 
 ---
 
@@ -98,7 +99,7 @@ from NPCI and RBI public sources.
 pip install -r requirements.txt
 ```
 
-**2. Collect data**
+**2. Collect NPCI data**
 ```bash
 cd scraper
 python main.py
@@ -106,7 +107,33 @@ python main.py
 Downloads and parses NPCI data into scraper/output/
 as structured CSVs. Raw files cached in scraper/raw/.
 
-**3. Set up MySQL**
+**3. Collect RBI data (manual)**
+
+RBI has no scrape-friendly public API like NPCI's, so NEFT and RTGS
+figures must be collected by hand from RBI's Payment System Indicators
+(rbi.org.in → Statistics → Data Releases). This project used monthly
+data from November 2019 onward, matching the earliest month NEFT/RTGS
+figures were available alongside UPI's.
+
+Reshape whatever you download into this format and save it as
+`scraper/output/rbi_instruments.csv`:
+
+```
+month_year,instrument,volume_mn,value_cr
+2019-11,NEFT,219.4594,1734651.2269
+2019-11,RTGS,31.5561,987654.3210
+```
+
+- `month_year` — YYYY-MM
+- `instrument` — NEFT or RTGS
+- `volume_mn` — monthly transaction volume, millions
+- `value_cr` — monthly transaction value, ₹ crore
+
+This repo does not ship an automated cleaner for RBI's raw export —
+unlike NPCI's, its format isn't stable enough to script reliably
+against, so this step is manual by design.
+
+**4. Set up MySQL**
 
 Create the database:
 ```sql
@@ -122,7 +149,7 @@ python scraper/load_to_mysql.py \
   --database upi_data
 ```
 
-**4. Run analysis**
+**5. Run analysis**
 
 Open notebooks in Jupyter in this order:
 ```
