@@ -1,7 +1,7 @@
 # Mapping UPI
 ### A Data Study of Scale, Geography, and Competition in India's Payment Ecosystem
 
-**Author:** Ayush Chaugule
+
 **Period:** 2016 – 2026
 **Data Sources:** NPCI Product Statistics · RBI Payment System Indicators
 **Tools:** Python · MySQL 8.0 · Jupyter · matplotlib · seaborn
