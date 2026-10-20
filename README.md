@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://raw.githubusercontent.com/Ayush-Chaugule/mapping-upi/main/report/upi_report.pdf?download=1">
-    <img src="https://img.shields.io/badge/Download-Report-238636?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Report">
+    <img src="https://img.shields.io/badge/Read-Report-238636?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Read Report">
   </a>
   <a href="analysis/">
     <img src="https://img.shields.io/badge/Explore-Code-8957e5?style=for-the-badge&logo=github&logoColor=white" alt="Explore Code">
