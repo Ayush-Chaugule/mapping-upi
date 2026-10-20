@@ -2,7 +2,7 @@
 ### A Data Study of Scale, Geography, and Competition in India's Payment Ecosystem
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/report/upi_report.pdf?download=1">
+  <a href="https://raw.githubusercontent.com/Ayush-Chaugule/mapping-upi/main/report/upi_report.pdf?download=1">
     <img src="https://img.shields.io/badge/Download-Report-238636?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Report">
   </a>
   <a href="analysis/">
