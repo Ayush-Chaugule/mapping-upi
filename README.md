@@ -2,8 +2,14 @@
 ### A Data Study of Scale, Geography, and Competition in India's Payment Ecosystem
 
 <p align="center">
-  <a href="report/upi_report.pdf">
-    <img src="https://img.shields.io/badge/View%20Full%20Report-Read%20PDF-1f6feb?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="View Full Report">
+  <a href="report/upi_report.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/Read-Report-1f6feb?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Read Report">
+  </a>
+  <a href="report/upi_report.pdf" download="upi_report.pdf">
+    <img src="https://img.shields.io/badge/Download-Report-238636?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Report">
+  </a>
+  <a href="analysis/">
+    <img src="https://img.shields.io/badge/Explore-Code-8957e5?style=for-the-badge&logo=github&logoColor=white" alt="Explore Code">
   </a>
 </p>
 
